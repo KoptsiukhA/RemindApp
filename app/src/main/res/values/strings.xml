@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RemindApp Beta</string>
+    <string name="search">Search</string>
+    <string name="menu_item_notification">Notifications</string>
+</resources>
