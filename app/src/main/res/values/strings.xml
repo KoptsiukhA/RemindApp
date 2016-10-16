@@ -2,4 +2,7 @@
     <string name="app_name">RemindApp Beta</string>
     <string name="search">Search</string>
     <string name="menu_item_notification">Notifications</string>
+
+    <string name="navigation_open">Open</string>
+    <string name="navigation_close">Close</string>
 </resources>
