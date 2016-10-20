@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import bel.kaistra.remindapp.adaters.TabPagerFragmentAdapter;
+import bel.kaistra.remindapp.adaters.TabFragmentAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initTabs() {
         viewPager = (ViewPager) findViewById(R.id.view_pager);
-        TabPagerFragmentAdapter adapter = new TabPagerFragmentAdapter(getSupportFragmentManager());
+        TabFragmentAdapter adapter = new TabFragmentAdapter(this, getSupportFragmentManager());
         viewPager.setAdapter(adapter);
         tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.setupWithViewPager(viewPager);
@@ -50,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
         toolbar.inflateMenu(R.menu.menu);
 
     }
